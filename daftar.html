@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+        :root{
+            --background: #1634c99db;
+            --text: #fff;
+            --text2: #000;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+        }
+        body {
+            background: url('aset/baground/image\ 20.png');
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 0 20px;
+        }
+        .form-containet{
+            display: flex;
+            width: 1000px;
+            height: 500px;
+            overflow: hidden;
+        }
+        .col-1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 55%;
+        }
+        
+        .col-2{
+            position: relative;
+            width: 45%;
+            padding: 20px;
+            background: rgba(255, 255,  255, 0.3);
+            background-repeat: blur(30px);
+            border-radius: 6% 6% 6% 6%;
+            overflow: hidden;
+        }
+        .btn-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn{
+            font-weight: 400;
+            padding: 5px 30px;
+            border: none;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--text);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .btn:hover{
+            opacity: 0.85;
+        }
+        .login-form{
+            position: absolute;
+            left: 2%;
+            /* transform: translate(-50x); */
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            padding: 0 4vw;
+            transition: .3s;
+        }
+        .login-form .form-title{
+            margin-block: 7px 20px;
+        }
+        .form-title{
+            margin: 20px 0;
+            color: black;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .form-inputs{
+            width: 100%;
+        }
+        .input-box{
+            position: relative;
+        }
+        .input-fields{
+            width: 100%;
+            height: 55px;
+            padding: 0 15px;
+            margin: 10px 0;
+            color: black;
+            background: white;
+            border: none;
+            border-radius: 10px;
+            
+        }
+
+        ::placeholder{
+            color: black;
+            font-size: 15px;
+        }
+        .input-box .icon{
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            color: black;
+        }
+        .forget-pass{
+            display: flex;
+            justify-content: right;
+            gap: 14px;
+        }
+        .forget-pass a{
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .input-submit{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            height: 55px;
+            padding: 0 15px;
+            margin: 10px 0;
+            color: white;
+            background: blue;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: .3s;
+        }
+        .input-submit:hover{
+            gap:15px;
+        }
+        @media(max-width: 892px){
+            .form-containet{
+                width: 80%;
+            }
+            .col-1{
+                display: none;
+            }
+            .col-2{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="POST" class="form-containet">
+    <div class="col col-1">
+        <div class="image-layer">
+            <div style="width: 500;">
+                <h3 style="color: #000; font-style: oblique;">Tracking Alumni</h3>
+                <p style="color: #000;">Aplikasi tracking alumni adalah sistem berbasis web yang dirancang untuk melacak dan memantau perkembangan karier serta kontribusi alumni setelah lulus dari lembaga pendidikan.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col col-2">
+        <!-- Login -->
+        <div class="login-form">
+            <div class="form-title">
+                <span>Daftar</span>
+            </div>
+            <div class="form-inputs">
+                <div class="input-box">
+                    <input type="text" class="input-fields" placeholder="Email" name="email"  required=""><i class='bx bx-user icon'></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-fields" placeholder="User Name" name="username"  required=""><i class='bx bx-user icon'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-fields" placeholder="Password" name="password" required=""><i class='bx bx-lock-alt icon'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-fields" placeholder="Confirm Password" name="password" required=""><i class='bx bx-lock-alt icon'></i>
+                </div>
+                <div class="forget-pass">
+                    <a href="#" style="color:black">Sudah Mempunyai Akun?<span style="color: blue;"> Login</span></a>
+                </div>
+                <div class="input-box">
+                    <button class="input-submit" type="submit" name="submit" value="login" >
+                        <span >Daftar</span>
+                        <i class="bx bx-right-arrow-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<script>
+    const loginBtn = document.querySelector("#login");
+    // const loginForm = document.querySelector(".login-form");
+
+    loginBtn.addEventListener('click',()=>{
+        loginBtn.style.backgroundColor="#21264D";
+        registerBtn.style.backgroundColor="rgba(255, 255, 255, 0.2)";
+
+        loginForm.style.left ="100%";
+        registerForm.style.left ="-50%";
+
+        loginForm.style.opacity ="1";
+        registerForm.style.opacity ="0";
+
+        document.querySelector(".col-1").style.borderRadius="0 30% 20% 0";
+    })
+
+</script>
+
+</body>
+</html>
+
+
