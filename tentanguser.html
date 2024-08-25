@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+            
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins',sans-serif;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 10px 20px; 
+            background-color: #ffffff; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        }
+        heder{
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 10px 20px; 
+            background-color: #ffffff; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);   
+        }
+
+        .logo img {
+            height: 50px; 
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #000000; 
+            transition: color 0.3s; 
+        }
+
+        .nav-links a:hover {
+            color: #0093DD; 
+        }
+
+        .user-actions {
+            display: flex;
+            gap: 0px;
+        }
+
+        .user-actions button {
+            border-radius: 20px;
+            padding: 10px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            transition: background-color 0.3s, color 0.3s; 
+        }
+
+        .user-actions button a {
+            color: inherit; 
+            text-decoration: none; 
+        }
+
+        /* Styling untuk tombol Daftar */
+        .daftar {
+            background-color: #007bff; 
+            color: #fff; 
+            margin-right: -20px;
+            border: 1px solid #007bff; 
+        }
+
+        .daftar:hover {
+            background-color: #fff; 
+            color: #007bff;
+            border: 1px solid #007bff;
+        }
+
+        /* Styling untuk tombol Masuk */
+        .masuk {
+            background-color: #fff; 
+            color: #007bff; 
+            border: 1px solid #007bff; 
+        }
+
+        .masuk:hover {
+            background-color: #007bff; 
+            color: #fff; 
+        }
+        @media(max-width: 892px){
+                    .heder{
+                        width: 80%;
+                    }
+                }
+                .profile-dropdown {
+            width: 300px;
+        }
+        .profile-dropdown .profile-header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .profile-dropdown .profile-header img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .profile-dropdown .profile-body {
+            padding: 10px;
+            text-align: center;
+        }
+        .profile-dropdown .btn {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="heder">
+        <div class="logo">
+            <img src="aset/logo/SMK_Negeri_1_Bantul_logo 1.png" alt="logo">
+        </div>
+        <div class="nav-links">
+            <a href="homeuser.html">Beranda</a>
+            <a href="lowonganuser.html">Lowongan Kerja</a>
+            <a href="tentanguser.html">Tentang</a>
+        </div>
+        <div class="user-actions dropdown">
+            <a class="" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="aset/profil/profil.png" alt="Profile" class="rounded-circle" width="50" height="50">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end profile-dropdown" aria-labelledby="dropdownMenuLink">
+                <li class="profile-header">
+                    <img src="aset/profil/profil.png" alt="Profile Image">
+                    <div>
+                        <h6 class="mb-0">Nama User</h6>
+                        <small>Joined: 04-05-2021</small>
+                    </div>
+                </li>
+                <li><hr class="dropdown-divider"></li>
+                <li class="profile-body">
+                    <p>Last Login: 25-08-2024 (21:07:38)</p>
+                    <button class="btn btn-primary">More Info</button>
+                    <a href="login.html"><button class="btn btn-danger mt-2" href>Logout</button></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container-fluid p-auto text-center align-items-center" style="background-image: url(aset/baground/bg2.png);max-width:1500px;min-height: 500px;background-position: center;">
+        <div class="p-3 mt-auto mb-auto">
+            <p style="text-align: left; font-weight: 900;font-size:xx-large; font-style:inherit;color: #fff;">SMK N 1 BANTUL</p>
+            <p style="text-align: left; font-weight:300;font-size:medium;color: #fff;">Sekolah Pusat Keunggulan sektor Ekonomi Kreatif</p>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center p-5">
+        <div class="container-fluid text-center pt-2 pb-2">
+            <p style="text-align: left; font-weight: 900;font-size:xx-large; color: #000; text-align: center;">Tentang Kami</p>
+        </div>
+        <div class="ps-5 pe-5 pt-2 pb-2 container-fluid text-center">
+            <p style="text-align: justify;">SMK Negeri 1 Bantul berdiri pada tahun 1968 berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan Nomor : 213/UKK/III/1968 tertanggal 9 Juni 1968 dengan nama SMEA Negeri VI Bantul yang selanjutnya berubah nama menjadi SMEA Negeri 1 Bantul dan sekarang menjadi SMK Negeri 1 Bantul. Dalam perkembangannya sekolah sangat komit dengan perubahan dan peningkatan mutu. Komitmen peningkatan mutu diaktualisasikan dengan penerapan Sistem Manajemen Mutu (SMM) ISO 9001:2008 sejak tanggal 21 Oktober 2010 sampai 29 Mei 2013. Kemudian pada awal tahun 2013 SMK Negeri 1 Bantul mengadakan resertifikasi Sistem Manajemen Mutu (SMM) ISO 9001:2008. Hal itu menunjukkan bahwa mutu pendidikan SMK Negeri 1 Bantul telah diakui oleh lembaga sertifiikasi TUV Rheinland Cert GmbH dengan certifikat nomor 01.100.065 164</p>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center p-5" style="background-color: #007bff;">
+        <div class="container-fluid text-center pt-2 pb-4">
+            <p style="text-align: left; font-weight: 900;font-size:xx-large; color: #fff; text-align: center;">Visi</p>
+        </div>
+        <div class="ps-5 pe-5 pt-2 pb-2 container-fluid text-center" style="color: #fff;">
+            <p >Visi SMK N 1 Bantul adalah sebagai berikut :</p>
+            <p >“Terwujudnya lulusan berkualitas, berkarakter, dan berwawasan lingkungan”</p>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center p-5">
+        <div class="container-fluid text-center pt-2 pb-4">
+            <p style="text-align: left; font-weight: 900;font-size:xx-large; color: #000; text-align: center;">Misi</p>
+        </div>
+        <div class="ps-5 pe-5 pt-2 pb-2 container-fluid text-center" style="color: #000;">
+            <p >Indikator Visi dan Misi Sekolah :</p>
+        </div>
+        <div class="row ps-5 pe-5 pt-2 pb-2" style="text-align: justify;">
+            <div class="col-6">
+                <ul>
+                    <li>Tersedianya sarana prasarana dan SDM sesuai standar Nasional Pendidikan</li>
+                    <li>Berprestasi di bidang akademik dan non akademik bertaraf nasional dan internasional</li>
+                    <li>Tamatan mampu berkompetisi secara mandiri di era global</li>
+                    <li>Pembelajaran agama diberikan sesuai agama yang dianut</li>
+                    <li>Dikembangkannya sikap toleransi antar sesama</li>
+                    <li>Teraplikasikannya sains dan teknologi informasi komunikasi dalam kegiatan sekolah</li>
+                    <li>Ditanamkannya sikap disiplin, jujur, dan tanggung jawab pada warga sekolah</li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <ul>
+                    <li>Peduli terhadap lingkungan</li>
+                    <li>Menyiapkan sarana prasarana dan SDM yang memenuhi Standart Nasional Pendidikan</li>
+                    <li>Melaksanakan pembelajaran yang berbasis sains dan teknologi</li>
+                    <li>Mengimplementasikan iman, takwa dan nilai-nilai karakter bangsa dalam kehidupan sehari-hari.</li>
+                    <li>Melaksanakan pembelajaran berbasis lingkungan serta mengaplikasikannya dalam kehidupan sehari-hari</li>
+                    <li>Menyiapkan tamatan yang mampu mengisi dan menciptakan lapangan kerja serta mengembangkan profesionalitas dibidang bisnis</li>
+                    <li>Berperilaku santun dalam keseharian</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-3" style="background-color: blue;">
+        <div class="row p-2">
+            <div class="col-8" style="color: white;">
+                <div class="container-fluid">
+                    <p style="color: white; font-size: large; font-weight: 500; font-size: 25px;">TRACKING ALUMNI</p>
+                    <p style="color: white; font-size:medium; font-weight: 300; font-size: 20px;">SMK N 1 Bantul</p>
+                </div>
+                <div class="container-fluid p-2">
+                    <p>Jl. Parangtritis No.KM.11, Dukuh, Sabdodadi, Kec. Bantul, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55715</p>
+                </div>
+                <div class="container-fluid p-2">
+                    <p>@2024 SMK N 1 Bantul, All Right Reserved</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <p style="color: white; font-size: large; font-weight: 500; font-size: 25px;">KONTAK</p>
+                <div class="row">
+                    <div class="col-2 p-2">
+                        <img src="aset/icon/email.png" width="40px">
+                    </div>
+                    <div class="col-2 p-2">
+                        <img src="aset/icon/fb.png" width="40px">
+                    </div>
+                    <div class="col-2 p-2">
+                        <img src="aset/icon/tele.png" width="40px">
+                    </div>
+                    <div class="col-2 p-2">
+                        <img src="aset/icon/ig.png" width="40px">
+                    </div>
+                    <div class="col-2 p-2">
+                        <img src="aset/icon/twiter.png" width="40px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

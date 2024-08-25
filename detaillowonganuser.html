@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Lowongan Kerja</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+            
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins',sans-serif;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 10px 20px; 
+            background-color: #ffffff; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        }
+        heder{
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 10px 20px; 
+            background-color: #ffffff; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);   
+        }
+
+        .logo img {
+            height: 50px; 
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #000000; 
+            transition: color 0.3s; 
+        }
+
+        .nav-links a:hover {
+            color: #0093DD; 
+        }
+
+        .user-actions {
+            display: flex;
+            gap: 0px;
+        }
+
+        /* Styling untuk tombol Daftar */
+        .daftar {
+            background-color: #007bff; 
+            color: #fff; 
+            margin-right: -20px;
+            border: 1px solid #007bff; 
+        }
+
+        .daftar:hover {
+            background-color: #fff; 
+            color: #007bff;
+            border: 1px solid #007bff;
+        }
+
+        /* Styling untuk tombol Masuk */
+        .masuk {
+            background-color: #fff; 
+            color: #007bff; 
+            border: 1px solid #007bff; 
+        }
+
+        .masuk:hover {
+            background-color: #007bff; 
+            color: #fff; 
+        }
+        @media(max-width: 892px){
+                    .heder{
+                        width: 80%;
+                    }
+                }
+                .profile-dropdown {
+            width: 300px;
+        }
+        .profile-dropdown .profile-header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .profile-dropdown .profile-header img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .profile-dropdown .profile-body {
+            padding: 10px;
+            text-align: center;
+        }
+        .profile-dropdown .btn {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="heder">
+        <div class="logo">
+            <img src="aset/logo/SMK_Negeri_1_Bantul_logo 1.png" alt="logo">
+        </div>
+        <div class="nav-links">
+            <a href="homeuser.html">Beranda</a>
+            <a href="lowonganuser.html">Lowongan Kerja</a>
+            <a href="tentanguser.html">Tentang</a>
+        </div>
+        <div class="user-actions dropdown">
+            <a class="" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="aset/profil/profil.png" alt="Profile" class="rounded-circle" width="50" height="50">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end profile-dropdown" aria-labelledby="dropdownMenuLink">
+                <li class="profile-header">
+                    <img src="aset/profil/profil.png" alt="Profile Image">
+                    <div>
+                        <h6 class="mb-0">Nama User</h6>
+                        <small>Joined: 04-05-2021</small>
+                    </div>
+                </li>
+                <li><hr class="dropdown-divider"></li>
+                <li class="profile-body">
+                    <p>Last Login: 25-08-2024 (21:07:38)</p>
+                    <button class="btn btn-primary">More Info</button>
+                    <a href="login.html"><button class="btn btn-danger mt-2" href>Logout</button></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container-fluid ps-5 pe-5 pt-3 pb-1">
+        <a href="lowonganuser.html" style="color: #000000;">Lowongan</a><span>/</span><a href="#" style="color: #000000;">Detail Lowongan</a>
+    </div>
+
+    <div class="container-fluid ps-5 pe-5 pt-3 pb-4">
+        <div class="container-fluid p-5 border rounded-5">
+            <div class="row container-fluid align-items-center pt-2 pb-1 ">
+                <div class="col-9">
+                    <p class="text-start" style="font-size: xx-large; font-weight: bold;">
+                        Nitro Property
+                    </p>
+                    <p class="text-start" style="font-size:x-large; font-weight: 800;">
+                        Admin Marketing
+                    </p>
+                    <p class="text-start" style="font-size: medium; font-weight: 400;">
+                        Perusahaan yang menjual property  terlengkap di yogya, anda dapat memilih sesuai kebutuhan anda.
+                    </p>
+                </div>
+                <div class="col-3">
+                    <img src="aset/instansi/ins.png" width="200" height="200">
+                </div>
+            </div>
+            <hr>
+            <div>
+                <div class="pt-1 pb-1" style="font-size:large;font-weight:bold">
+                    Ringkasan
+                </div>
+                <div>
+                    <p><img src="aset/icon/pengalaman.png" alt="" width="20" height="20" class="pt-auto pb-auto"> <span class="text-center pt-auto pb-auto" style="font-size: medium;">0-2 Tahun</span></p>     
+                </div>
+                <div>
+                    <p><img src="aset/icon/gender.png" alt="" width="20" height="20" class="pt-auto pb-auto"> <span class="text-center pt-auto pb-auto" style="font-size: medium;">Pria/Wanita</span></p>     
+                </div>
+                <div>
+                    <p><img src="aset/icon/gaji.png" alt="" width="20" height="20" class="pt-auto pb-auto"> <span class="text-center pt-auto pb-auto" style="font-size: medium;">Kompetitif</span></p>     
+                </div>
+                <div>
+                    <p><img src="aset/icon/lokasi.png" alt="" width="20" height="20" class="pt-auto pb-auto"> <span class="text-center pt-auto pb-auto" style="font-size: medium;">Jl. Pandega Satria No.4, Purwosari, Caturtunggal, Kec. Mlati, Sleman, DIY</span></p>     
+                </div>
+            </div>
+            <div>
+                <div class="pt-1 pb-1" style="font-size:large;font-weight:bold">
+                    Deskripsi Pekerjaan
+                </div>
+                <ul>
+                    <li>Kerja sehari hari merekap data Proyek Iklan Proyek Minimal 80 iklan/hari Di semua marketplace</li>
+                    <li>Komunikatif terhadap konsumen dan orang baru</li>
+                    <li>Dapat memaparkan proyek dengan detail</li>
+                </ul>
+            </div>
+            <div>
+                <div class="pt-1 pb-1" style="font-size:large;font-weight:bold">
+                    Syarat
+                </div>
+                <ul>
+                    <li>Wanita & Pria Max 30 Tahun</li>
+                    <li>Pendidikan Minimal S1 (Segala Jurusan)</li>
+                    <li>Berpengalaman Diutamakan</li>
+                    <li>Penempatan Kerja Di Yogyakarta</li>
+                    <li>Memiliki kemampuan mengoperasikan Laptop</li>
+                    <li>Dapat Bekerja Dalam Tim</li>
+                    <li>Memiliki kendaraan Pribadi</li>
+                    <li>Kreatif, Inovatif, Komunikatif, Jujur dan Serius dalam bekerja</li>
+                </ul>
+            </div>
+            <div>
+                <div class="pt-1 pb-2" style="font-size:large;font-weight:bold">
+                    Kirim Lamaran
+                </div>
+                <div>
+                    <p><img src="aset/icon/telephone.png" alt="" width="20" height="20" class="pt-auto pb-auto"> <span class="text-center pt-auto pb-auto" style="font-size: medium;">0895 3219 80103</span></p>     
+                </div>
+                <div>
+                    <p><img src="aset/icon/emaill.png" alt="" width="20" height="20" class="pt-auto pb-auto"> <span class="text-center pt-auto pb-auto" style="font-size: medium;">nitroproperty@gmail.com</span></p>     
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-3" style="background-color: blue;">
+        <div class="row p-2">
+            <div class="col-8" style="color: white;">
+                <div class="container-fluid">
+                    <p style="color: white; font-size: large; font-weight: 500; font-size: 25px;">TRACKING ALUMNI</p>
+                    <p style="color: white; font-size:medium; font-weight: 300; font-size: 20px;">SMK N 1 Bantul</p>
+                </div>
+                <div class="container-fluid p-2">
+                    <p>Jl. Parangtritis No.KM.11, Dukuh, Sabdodadi, Kec. Bantul, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55715</p>
+                </div>
+                <div class="container-fluid p-2">
+                    <p>@2024 SMK N 1 Bantul, All Right Reserved</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <p style="color: white; font-size: large; font-weight: 500; font-size: 25px;">KONTAK</p>
+                <div class="row">
+                    <div class="col-2 p-2">
+                        <img src="aset/icon/email.png" width="40px">
+                    </div>
+                    <div class="col-2 p-2">
+                        <img src="aset/icon/fb.png" width="40px">
+                    </div>
+                    <div class="col-2 p-2">
+                        <img src="aset/icon/tele.png" width="40px">
+                    </div>
+                    <div class="col-2 p-2">
+                        <img src="aset/icon/ig.png" width="40px">
+                    </div>
+                    <div class="col-2 p-2">
+                        <img src="aset/icon/twiter.png" width="40px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
